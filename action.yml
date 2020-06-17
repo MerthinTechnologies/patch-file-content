@@ -1,0 +1,15 @@
+name: 'Patch file content'
+description: 'Github Action to replace file content using regular expressions'
+inputs:
+  filename:
+    description: 'File to work with'
+    required: true
+  pattern:
+    description: "Pattern to replace"
+    required: true
+  replace:
+    description: "The value to replace with"
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
